@@ -43,7 +43,7 @@
                         <form action="login" method="POST">
                             <div class="form-group">
                                 <label class="grey-text">Login</label>
-                                <input type="text" name="login" class="form-control" >
+                                <input type="text" value="${param['login']}" name="login" class="form-control" >
                             </div>
 
                             <div class="form-group">
@@ -51,7 +51,7 @@
                                 <input type="password" name="password" class="form-control" >
                             </div>
                             <button type="submit" class="btn btn-secondary btn-block btn-sm" >connexion</button>
-                            <button type="button" class="btn btn-link btn-block btn-sm" >S'inscrire ?</button>
+                            <button type="button" onclick="location.href='inscription.jsp'" class="btn btn-link btn-block btn-sm" >S'inscrire ?</button>
                         </form>
                         <p class="text-danger text-center">${msg}</p>
                     </div>
