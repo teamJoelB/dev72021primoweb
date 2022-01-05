@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 5 janv. 2022, 10:10:06
+    Document   : menus
+    Created on : 5 janv. 2022, 16:02:44
     Author     : joelg
 --%>
 
@@ -30,35 +30,25 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
     </head>
     <body>
+        <div>
+            <ul class="nav purple-gradient py-4 mb-4 mb-md-0 font-weight-bold z-depth-1 nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link active white-text" href="#!">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white-text" href="#!">Memo Privé</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white-text" href="#!">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white-text" href="#!">Link</a>
+                </li>
+            </ul>
 
-
-        <div class="mt15-perso">
-            <div class="cadre-login">
-                <div class="card p-4 my-shadow">
-                    <div class="card-header my-card-header">
-                        <h4>Login Dev-7-2021 MemoApp</h4>
-                    </div>
-                    <div class="card-body">
-                        <form action="login" method="POST">
-                            <div class="form-group">
-                                <label class="grey-text">Login</label>
-                                <input type="text" value="${param['login']}" name="login" class="form-control" >
-                            </div>
-
-                            <div class="form-group">
-                                <label class="grey-text">Password</label>
-                                <input type="password" name="password" class="form-control" >
-                            </div>
-                            <button type="submit" class="btn btn-secondary btn-block btn-sm" >connexion</button>
-                            <button type="button" onclick="location.href='inscription.jsp'" class="btn btn-link btn-block btn-sm" >S'inscrire ?</button>
-                        </form>
-                        <p class="text-danger text-center">${msg}</p>
-                    </div>
-                </div>
-            </div>
         </div>
-
     </body>
 </html>

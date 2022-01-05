@@ -12,8 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello Home !</h1>
+        <%@include file="menu.jsp" %>
+        
+        <div class="container">
+             <h1>Hello ${user.prenom} ${user.nom} !</h1>
+        </div>
     
-        <p>${msg}</p>
     </body>
 </html>
